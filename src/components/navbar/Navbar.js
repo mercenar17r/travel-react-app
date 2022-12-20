@@ -1,4 +1,6 @@
 import React from "react";
+import { BiSearch } from "react-icons/bi";
+import { BsPerson } from "react-icons/bs";
 
 function Navbar() {
   return (
@@ -13,6 +15,10 @@ function Navbar() {
         <li>Book</li>
         <li>Views</li>
       </ul>
+      <div className="nav-icons">
+        <BiSearch className="icon" />
+        <BsPerson className="icon" />
+      </div>
     </div>
   );
 }
