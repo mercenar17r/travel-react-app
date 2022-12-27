@@ -17,3 +17,14 @@ li {
   display: none;
   /* padding:1rem; */
 }
+@media screen and (min-width: 940px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-icons {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
