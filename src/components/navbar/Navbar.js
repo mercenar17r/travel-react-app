@@ -3,6 +3,13 @@ import { BiSearch } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import "./NavbarStyles.css";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaPinterest,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -33,8 +40,17 @@ function Navbar() {
           <li>Views</li>
         </ul>
         <div className="mobile-menu-bottom">
-          <div className="menu-icons"></div>
-          <div className="social-icons"></div>
+          <div className="menu-icons">
+            <button>Search</button>
+            <button>Account</button>
+          </div>
+          <div className="social-icons">
+            <FaFacebook className="icon" />
+            <FaInstagram className="icon" />
+            <FaPinterest className="icon" />
+            <FaTwitter className="icon" />
+            <FaYoutube className="icon" />
+          </div>
         </div>
       </div>
     </div>
