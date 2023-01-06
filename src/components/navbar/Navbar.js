@@ -27,13 +27,13 @@ function Navbar() {
         <li>Views</li>
       </ul>
       <div className="nav-icons">
-        <BiSearch className="icon" />
+        <BiSearch className="icon" style={{ marginRight: "1rem" }} />
         <BsPerson className="icon" />
       </div>
       <div className="hamburger" onClick={handleNav}>
         <HiOutlineMenuAlt4 className="icon" />
       </div>
-      <div className={nav ? "mobile-nav active" : "mobile-nav"}>
+      <div className={nav ? "mobile-menu active" : "mobile-menu"}>
         <ul className="mobile-nav">
           <li>Home</li>
           <li>Destinations</li>
