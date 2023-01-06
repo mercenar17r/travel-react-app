@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
@@ -12,6 +12,8 @@ import {
 } from "react-icons/fa";
 
 function Navbar() {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => setNav(!nav);
   return (
     <div className="navbar">
       <div className="logo">
@@ -28,10 +30,10 @@ function Navbar() {
         <BiSearch className="icon" />
         <BsPerson className="icon" />
       </div>
-      <div className="hamburger">
+      <div className="hamburger" onClick={handleNav}>
         <HiOutlineMenuAlt4 className="icon" />
       </div>
-      <div className="mobile-menu">
+      <div className={nav ? "mobile-nav active" : "mobile-nav"}>
         <ul className="mobile-nav">
           <li>Home</li>
           <li>Destinations</li>
