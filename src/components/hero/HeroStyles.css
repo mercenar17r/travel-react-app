@@ -31,3 +31,19 @@
   margin: auto;
   padding: 1rem;
 }
+.form input[type="text"] {
+  border: transparent;
+  background-color: transparent;
+  width: 400px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.form input[type="text"]:focus {
+  outline: none;
+}
+@media screen and (max-width: 940px) {
+  .form input[type="text"] {
+    max-width: 275px;
+  }
+}
