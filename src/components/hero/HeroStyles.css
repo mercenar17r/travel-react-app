@@ -31,9 +31,3 @@
   margin: auto;
   padding: 1rem;
 }
-.form {
-  display: flex;
-  background-color: #ffffffcc;
-  color: #000;
-  justify-content: space-between;
-}
