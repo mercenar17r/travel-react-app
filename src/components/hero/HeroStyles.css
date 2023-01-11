@@ -45,11 +45,3 @@
   width: 100%;
   margin: 0 auto;
 }
-
-.form input[type="text"] {
-  border: transparent;
-  background-color: transparent;
-  width: 400px;
-  font-size: 1.2rem;
-  font-family: "Poppins", sans-serif;
-}
